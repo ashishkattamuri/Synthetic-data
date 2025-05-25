@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ```bash
 # Run the complete pipeline with default settings
-python run_pipeline.py --seed_instructions ./data/seed_instructions.json --count 100 --evolution_ratio 2.0
+python run_pipeline.py --seed_instructions seed_instructions.json --count 100 --evolution_ratio 2.0
 ```
 
 ### Custom Configuration
@@ -50,8 +50,8 @@ python run_pipeline.py --seed_instructions ./data/seed_instructions.json --count
 ```bash
 # Run with custom settings
 python run_pipeline.py \
-  --seed_instructions ./data/seed_instructions.json \
-  --persona_file ./data/personas.json \
+  --seed_instructions seed_instructions.json \
+  --persona_file data/personas.json \
   --count 200 \
   --evolution_ratio 2.0 \
   --edu_threshold 0.8 \
@@ -126,10 +126,6 @@ The pipeline outputs various metrics:
 - Educational value scores and thresholds
 - Quality qualification rates
 
-## Dataset
-
-The final curated instruction-response dataset is available on the Hugging Face Hub:
-[https://huggingface.co/datasets/ashishkattamuri/evolved-instruction-dataset](https://huggingface.co/datasets/ashishkattamuri/evolved-instruction-dataset)
 
 ## Citation
 
